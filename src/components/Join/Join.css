@@ -1,0 +1,103 @@
+html, body {
+  font-family: 'DM Mono', monospace;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.joinOuterContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  background-color: #26262B;
+}
+
+.joinInnerContainer {
+  width: 50%;
+  padding-bottom: 80px;
+}
+
+.joinInput {
+  background-color: #26262B;
+  border-radius: 0;
+  font-size: 18px;
+  color: white;
+  padding: 15px 20px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid white;
+  opacity: 0.9;
+}
+
+.joinInput::placeholder {
+    color: white;
+}
+
+.innerContainerInputs {
+    margin-bottom: 50px;
+    margin-top: 45px;
+}
+
+.heading {
+    color: rgb(215, 167, 167);
+    font-size: 4em;
+    font-weight: 400;
+    line-height: 100px;
+    font-family: 'Pacifico', cursive;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    margin: 20px auto;
+}
+
+.subHeading {
+    opacity: 0.9;
+    font-size: 1.5em;
+    margin-top: 30px;
+    color: whitesmoke;
+}
+
+.button {
+    color: #26262B;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: rgb(215, 167, 167);
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .joinOuterContainer {
+    height: 100%;
+  }
+
+  .joinInnerContainer {
+    width: 90%;
+  }
+
+}
+
+button:focus {
+  outline: 0;
+}
